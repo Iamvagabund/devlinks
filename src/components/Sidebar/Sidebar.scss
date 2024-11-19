@@ -1,0 +1,170 @@
+.sidebar {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 306px;
+    height: 632px;
+    border: 2px solid #b8b8b8;
+    border-radius: 52px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 286px;
+    height: 612px;
+    border-radius: 46px;
+    padding: 0 20px;
+    border: 2px solid #b8b8b8;
+  }
+}
+
+.profile {
+  &__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+    overflow: hidden;
+  }
+
+  &__image.has-image {
+    border: 6px solid #4936AA;
+  }
+
+  &__image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__info p {
+    border-radius: 12px;
+  }
+
+  &__info-name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__info-email {
+    font-size: 16px;
+    color: #868686;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+  width: 100%;
+
+  &-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &-social__icon {
+    margin-right: 8px;
+    font-size: 20px;
+    height: 100%;
+
+    & svg {
+      height: 100%;
+    }
+  }
+
+  &-social__arrow {
+    margin-left: auto;
+    font-size: 16px;
+  }
+
+  &-github {
+    background-color: #191919;
+  }
+
+  &-youtube {
+    background-color: #EF383A;
+  }
+
+  &-linkedin {
+    background-color: #0077B5;
+  }
+
+  &-twitter {
+    background-color: #1DA1F2;
+  }
+
+  &-facebook {
+    background-color: #3B5998;
+  }
+}
+
+.placeholder {
+  background-color: #EEEEEE;
+  color: #888;
+  padding: 5px;
+
+  &-image {
+    background-color: #d3d3d3;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 14px;
+  }
+
+  &-links {
+    background-color: #EDEDED;
+    padding: 26px 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  &-name {
+    margin-top: 30px;
+    width: 160px;
+    padding: 10px 0;
+  }
+
+  &-email {
+    width: 60px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 100%;
+  }
+}

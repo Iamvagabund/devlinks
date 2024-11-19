@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  z-index: 2;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__logo img {
+    border-radius: 7px;
+    width: 40px;
+    height: auto;
+  }
+
+  &__title {
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__menu-item {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #646464;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 24px 36px;
+    display: flex;
+    gap: 10px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #EFECFF;
+      border-radius: 8px;
+    }
+  }
+
+  &__menu-item.active {
+    color: #5F45C7;
+    background-color: #EFECFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 18px;
+    height: auto;
+  }
+
+  &__preview {
+    background-color: transparent;
+    color: #6F54E4;
+    border: 2px solid #6F54E4;
+    padding: 18px 32px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 24px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: #EFECFF;
+    }
+  }
+
+  &-button__icon-preview {
+    display: none;
+  }
+}
+
+.share-button {
+  display: block;
+  background-color: #633BFE;
+  padding: 18px 32px;
+  font-size: 24px;
+  color: #FBEFFF;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background-color .3s;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+
+    &-button__icon-preview {
+      display: block;
+    }
+
+    &__preview span {
+      display: none;
+    }
+
+    &-button span {
+      display: none;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__menu-item {
+      padding: 14px 18px;
+    }
+
+    &__preview {
+      padding: 14px 16px;
+    }
+  }
+}
